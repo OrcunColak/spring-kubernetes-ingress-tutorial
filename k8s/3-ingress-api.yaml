@@ -3,6 +3,8 @@ kind: Ingress
 metadata:
   name: instacart-api-ingress
   annotations:
+    # The rewrite rule /$2 indicates that whatever comes after /products or /promotions in the URL will be appended to
+    # the rewritten path, allowing for more flexible routing.
     nginx.ingress.kubernetes.io/rewrite-target: /$2
 spec:
   ingressClassName: nginx
@@ -11,6 +13,8 @@ spec:
       http:
         paths:
           - pathType: ImplementationSpecific
+            # The regex "/products(/|$)(.*)" matches any URL that starts with /products followed by either a / or the end of the string,
+            # capturing any additional segments in the (.*) group. The captured part can be rewritten and used in the backend service call.
             path: "/products(/|$)(.*)"
             backend:
               service:

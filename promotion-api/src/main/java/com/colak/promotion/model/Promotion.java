@@ -1,4 +1,4 @@
-package com.teqmonic.promotion.model;
+package com.colak.promotion.model;
 
 
 import lombok.AllArgsConstructor;

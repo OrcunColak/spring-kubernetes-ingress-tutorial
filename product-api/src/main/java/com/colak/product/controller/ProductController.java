@@ -1,6 +1,6 @@
-package com.teqmonic.product.controller;
+package com.colak.product.controller;
 
-import com.teqmonic.product.model.Products;
+import com.colak.product.model.Products;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

@@ -1,8 +1,7 @@
-package com.teqmonic.product.model;
+package com.colak.product.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
-import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 
 import java.math.BigDecimal;

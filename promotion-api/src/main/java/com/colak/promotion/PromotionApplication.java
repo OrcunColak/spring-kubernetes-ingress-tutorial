@@ -1,4 +1,4 @@
-package com.teqmonic.promotion;
+package com.colak.promotion;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
